@@ -1,0 +1,97 @@
+ If you want to skip those tests you can run "mvn clean package -DskipTests" to just build the individual microservices.
+
+build without test cases:
+==========================
+ > mvn clean install  `-Dmaven.test.skip
+
+
+
+Some commands 
+==============
+Zookeeper start
+----------------
+D:\kafka_2.12-2.6.2>.\bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+kafka start
+------------
+D:\kafka_2.12-2.6.2>.\bin\windows\kafka-server-start.bat config\server.properties
+
+create kafka topic using cli
+---------------------------------
+
+D:\1_prectices\kafka_2.12-3.3.2\bin\windows>kafka-topics.bat --create --topic topic1 --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+
+
+produce the data on the kafka topic
+-------------------------------------
+D:\1_prectices\soft\kafka_2.12-3.3.2\bin\windows>kafka-console-producer.bat --broker-list localhost:9092 --topic test-topic
+
+consumer the data from kafka topic
+-------------------------------------
+D:\1_prectices\soft\kafka_2.12-3.3.2\bin\windows>kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic
+git command
+===========
+GITBUSH>> vivek.kumar3@DLLT-PG02NQAQ MINGW64 /d/scorpibrokercode
+$ cd ScorpioBroker/
+
+
+vivek.kumar3@DLLT-PG02NQAQ MINGW64 /d/scorpibrokercode/ScorpioBroker (development)
+$ git checkout ldlibchange
+
+
+*******************************************************************
+
+1 Add Maven Plugin to POM.XML
+===============================
+`<build>
+<plugins>
+  <plugin>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+   </plugin>
+ </plugins>
+
+2 Build Spring Boot Project with Maven
+======================================
+    mvn package
+or
+     mvn install / mvn clean install
+3 Run Spring Boot app using Maven:
+====================================
+     mvn spring-boot:run
+[optional] Run Spring Boot app with java -jar command
+      java -jar target/mywebserviceapp-0.0.1-SNAPSHOT.jar
+**********************************************************************
+
+
+=========================================================================================================
+D:\testsuit\ngsi-ld-test-suite-develop>node -v
+
+D:\testsuit\ngsi-ld-test-suite-develop>pip install robotframework
+
+D:\testsuit\ngsi-ld-test-suite-develop>pip install --upgrade pip
+
+D:\testsuit\ngsi-ld-test-suite-develop>pip -version
+
+D:\testsuit\ngsi-ld-test-suite-develop>pip -v
+
+D:\testsuit\ngsi-ld-test-suite-develop>robot -v
+
+D:\testsuit\ngsi-ld-test-suite-develop>robot -version
+
+
+D:\testsuit\ngsi-ld-test-suite-develop>pip install --upgrade pip
+
+D:\testsuit\ngsi-ld-test-suite-develop>python -m pip install -r requirements.txt
+
+D:\testsuit\ngsi-ld-test-suite-develop>robot --outputdir ./results .
+
+
+
+https://prudentplus.co.in/nec-insurance-partners/Forms/login.aspx
+
+
+run specfice file 
+======================
+robot D:\Quarkus_test_suit\ngsi-ld-test-suite-develop-test5\TP\NGSI-LD\ContextSource\RegistrationSubscription\UpdateContextSourceRegistrationSubscription\039_04.robot
+
